@@ -30,13 +30,11 @@ using namespace std;
 			   MyClass second = first;		 		
 
 			   first.print();
-
 			   second.print();
 
 			   second.setValue(33);
 
 			   first.print();
-
 			   second.print();
 
 
