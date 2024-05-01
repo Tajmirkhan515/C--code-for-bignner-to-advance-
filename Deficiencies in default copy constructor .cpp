@@ -4,7 +4,7 @@ using namespace std;
  class MyClass
  { private:
 	 double *aPtr;
-	 int arraySize;
+	 
  public:	
 
 	 MyClass(double value) {
