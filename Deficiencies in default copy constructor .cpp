@@ -4,7 +4,7 @@ using namespace std;
  class MyClass
  { private:
 	 double *aPtr;
-	 int arraySize;
+	 
  public:	
 
 	 MyClass(double value) {
@@ -30,13 +30,11 @@ using namespace std;
 			   MyClass second = first;		 		
 
 			   first.print();
-
 			   second.print();
 
 			   second.setValue(33);
 
 			   first.print();
-
 			   second.print();
 
 
