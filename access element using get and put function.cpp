@@ -15,7 +15,7 @@ public:
 {
 	if (n < 0 || n >= LIMIT)
 	{
-		cout << "Index out of bounds"; exit(1);
+		cout << "Index out of bounds"; exit(1); // just for validation
 	}
 	arr[n] = elvalue;
 }
