@@ -22,7 +22,6 @@ public:
 	}
 
 
-	// Overload binary + operator
 	Counter operator + (const Counter& other) 
 	{
 		return Counter(c + other.c);
@@ -37,11 +36,9 @@ public:
 
 	CountDn(int k) : Counter(k) {}
 
-
-	// Overload binary + operator for CountDn
-	CountDn operator + (const CountDn& other) 
+	CountDn operator - (const CountDn& other) 
 	{
-		return CountDn(c + other.c);
+		return CountDn(c - other.c);
 	}
 };
 
@@ -53,7 +50,6 @@ int main()
 
 	cout << "value of c1  = " << c1.get_count()<<endl;
 	cout << "value of c2  = " << c2.get_count() << endl;
-
 
 	c3 = c1 + c2;
 	cout << "\nc3 = " << c3.get_count(); // Should output the sum of c1 and c2
