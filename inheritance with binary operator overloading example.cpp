@@ -30,7 +30,7 @@ public:
 
 	CountDn(int k) : Counter(k) {}
 
-<<<<<<< HEAD
+
 	CountDn operator - (const CountDn& other) 
 	{
 
