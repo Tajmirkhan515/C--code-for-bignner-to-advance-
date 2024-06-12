@@ -13,13 +13,13 @@ public:
 		return c;
 	}
 
-<<<<<<< HEAD
+
 
 	Counter operator + (const Counter& other) 
 	{
-=======
+
 	Counter operator+(const Counter& other) const {
->>>>>>> dbe2dbd953ad66727ad66a9cd8d218da80e73d4a
+
 		return Counter(c + other.c);
 	}
 };
@@ -33,12 +33,12 @@ public:
 <<<<<<< HEAD
 	CountDn operator - (const CountDn& other) 
 	{
-=======
+
 	
 	CountDn(const Counter& other) : Counter(other) {}
 
 	CountDn operator-(const CountDn& other) const {
->>>>>>> dbe2dbd953ad66727ad66a9cd8d218da80e73d4a
+
 		return CountDn(c - other.c);
 	}
 };
@@ -51,14 +51,13 @@ int main() {
 	cout << "value of c1  = " << c1.get_count() << endl;
 	cout << "value of c2  = " << c2.get_count() << endl;
 
-<<<<<<< HEAD
+
 	c3 = c1 + c2;
 	cout << "\nc3 = " << c3.get_count(); // Should output the sum of c1 and c2
-=======
+
 	c3 = c1 + c2;  
 	cout << "\nc3 = " << c3.get_count() << endl; 
 
->>>>>>> dbe2dbd953ad66727ad66a9cd8d218da80e73d4a
 
 	cout << "value of c1  = " << c1.get_count() << endl;
 	cout << "value of c2  = " << c2.get_count() << endl;
